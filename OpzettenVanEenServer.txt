@@ -1,0 +1,13 @@
+Opzetten van een server met Express en Nodemon:
+- maak de directory waar de server wordt geinstalleerd
+- maak deze directory actief en start gitbash
+- voer de opdracht "npm init -y" uit (creert de package.json file)
+- voer de opdracht "npm install nodemon --save-dev" uit (installeert node_modules voor nodemon en neemt devDependencies in de package.json file op; alleen voor development)
+- voer de opdracht "npm install express" uit (installeert de node_modules voor express en neemt Dependencies in de package.json file)
+- maak het bestand "server.js" in de directory en vul dit bestand met de basis instructies voor een express server
+	const express = require('express');
+	const app = express();
+	app.listen(3000, () => {
+		console.log('app is running on port 3000');
+	});
+- wijzig in package.json file de script opdracht voor start -> "start" : "nodemon server.js"
